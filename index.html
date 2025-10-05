@@ -57,7 +57,60 @@
                     <h2>Welcome to EduLearn! 👋</h2>
                     <p>Please login to access your courses and track your progress.</p>
                     <button class="btn btn-primary" onclick="showAuthModal()">Get Started</button>
-                </div>
+                    <div class="welcome-section" id="welcomeSection">
+                        <section class="hero">
+                            <div class="hero-content">
+                                <h1>Learn new skills. Build your future.</h1>
+                                <p class="hero-sub">Interactive courses, hands-on projects, and progress tracking to keep you motivated. Start small, learn consistently, and achieve big goals.</p>
+
+                                <div class="hero-ctas">
+                                    <button class="btn btn-primary" onclick="showAuthModal()">Get Started</button>
+                                    <button class="btn btn-secondary" onclick="document.getElementById('coursesSection').style.display='block'; showHome();">Browse Courses</button>
+                                </div>
+                                <div class="hero-trust">Trusted by learners worldwide • Beginner-friendly • Project-based</div>
+                            </div>
+                            <div class="hero-visual" aria-hidden="true">
+                                <!-- Simple illustrative SVG -->
+                                <svg width="260" height="180" viewBox="0 0 260 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0" y="0" width="260" height="180" rx="16" fill="#f5f7ff"/>
+                                    <g transform="translate(22,20)">
+                                        <rect x="0" y="0" width="200" height="26" rx="6" fill="#e6ecff"/>
+                                        <rect x="0" y="42" width="200" height="86" rx="8" fill="#fff" stroke="#e7edff"/>
+                                        <circle cx="20" cy="84" r="18" fill="#667eea"/>
+                                        <rect x="48" y="66" width="120" height="12" rx="6" fill="#eef3ff"/>
+                                        <rect x="48" y="86" width="90" height="10" rx="6" fill="#f3f6ff"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        </section>
+
+                        <section class="feature-row">
+                            <div class="feature-grid">
+                                <div class="feature-card">
+                                    <div class="feature-icon">📚</div>
+                                    <h3>Curated Courses</h3>
+                                    <p>Short, focused lessons that build practical skills through projects.</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">🧭</div>
+                                    <h3>Learn at your pace</h3>
+                                    <p>Track progress, resume anytime, and focus where you need the most help.</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">🏆</div>
+                                    <h3>Real outcomes</h3>
+                                    <p>Finish projects, show your skills, and get confident in your abilities.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="testimonial">
+                            <blockquote>
+                                "EduLearn helped me build a portfolio and land my first developer role. The lessons are clear and project-focused."
+                                <cite>— Jamie, Web Developer</cite>
+                            </blockquote>
+                        </section>
+                    </div>
 
                 <div id="coursesSection" style="display: none;">
                     <h1 class="page-title">My Courses</h1>
