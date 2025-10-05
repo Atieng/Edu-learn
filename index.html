@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Mini E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <!-- Tiny PNG fallback (1x1) for older browsers -->
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P4//8/AwAI/AL+XbYvWQAAAABJRU5ErkJggg==" type="image/png">
+    <script defer src="edu.js"></script>
+        
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">🎓 EduLearn</div>
+            <div class="user-info">
+                <span id="userGreeting"></span>
+                <button class="btn btn-primary" id="authBtn" onclick="showAuthModal()">Login</button>
+                <button class="btn btn-secondary" id="logoutBtn" onclick="logout()" style="display: none;">Logout</button>
+            </div>
+        </div>
+
+        <!-- Auth Modal -->
+        <div class="modal" id="authModal">
+            <div class="modal-content">
+                <h2 id="authTitle">Login</h2>
+                <form id="authForm" onsubmit="handleAuth(event)">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <span id="authBtnText">Login</span>
+                    </button>
+                    <div class="form-toggle">
+                        <span id="toggleText">Don't have an account?</span>
+                        <a onclick="toggleAuthMode()"><span id="toggleLink">Sign up</span></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Home Page -->
+            <div id="homePage">
+                <div class="welcome-section" id="welcomeSection">
+                    <h2>Welcome to EduLearn! 👋</h2>
+                    <p>Please login to access your courses and track your progress.</p>
+                    <button class="btn btn-primary" onclick="showAuthModal()">Get Started</button>
+                </div>
+
+                <div id="coursesSection" style="display: none;">
+                    <h1 class="page-title">My Courses</h1>
+                    <p class="page-subtitle">Continue your learning journey</p>
+                    <div class="course-grid" id="courseGrid"></div>
+                </div>
+            </div>
+
+            <!-- Course Detail Page -->
+            <div id="courseDetailPage" class="course-detail">
+                <button class="back-btn" onclick="showHome()">← Back to Courses</button>
+                <div class="course-header" id="courseDetailHeader"></div>
+                <h2 style="margin-bottom: 20px; color: #333;">Course Lessons</h2>
+                <div class="lessons-list" id="lessonsList"></div>
+                <div class="course-actions">
+                    <button class="btn btn-primary btn-complete" onclick="markCourseComplete()">
+                        Mark Course as Completed
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
