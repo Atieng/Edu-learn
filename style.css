@@ -6,7 +6,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0b3d91 0%, #002f6c 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -31,7 +31,7 @@
         .logo {
             font-size: 28px;
             font-weight: bold;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0b3d91 0%, #002f6c 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -54,13 +54,13 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0b3d91 0%, #002f6c 100%);
             color: white;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 15px rgba(11, 61, 145, 0.4);
         }
 
         .btn-secondary {
@@ -127,7 +127,7 @@
 
         .form-group input:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #0b3d91;
         }
 
         .form-toggle {
@@ -194,19 +194,19 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0b3d91 0%, #002f6c 100%);
         }
 
         .course-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            border-color: #667eea;
+            border-color: #0b3d91;
         }
 
         .course-icon {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0b3d91 0%, #002f6c 100%);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -238,7 +238,7 @@
         }
 
         .course-lessons {
-            color: #667eea;
+            color: #0b3d91;
             font-weight: 600;
             font-size: 14px;
         }
@@ -269,7 +269,7 @@
         .back-btn {
             background: none;
             border: none;
-            color: #667eea;
+            color: #0b3d91;
             font-size: 16px;
             cursor: pointer;
             margin-bottom: 20px;
@@ -285,7 +285,7 @@
         }
 
         .course-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0b3d91 0%, #002f6c 100%);
             padding: 30px;
             border-radius: 12px;
             color: white;
@@ -325,7 +325,7 @@
         .lesson-number {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0b3d91 0%, #002f6c 100%);
             color: white;
             border-radius: 50%;
             display: flex;
@@ -464,7 +464,7 @@
             padding: 18px;
             border-radius: 12px;
             text-align: left;
-            box-shadow: 0 6px 18px rgba(102, 126, 234, 0.06);
+            box-shadow: 0 6px 18px rgba(11, 61, 145, 0.06);
         }
 
         .feature-icon {
@@ -474,7 +474,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0b3d91 0%, #002f6c 100%);
             color: white;
             font-size: 22px;
             margin-bottom: 12px;
@@ -493,7 +493,7 @@
 
         /* Testimonial */
         .testimonial blockquote {
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #0b3d91;
             padding: 18px 20px;
             background: #f8fbff;
             border-radius: 8px;
